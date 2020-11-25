@@ -1,0 +1,55 @@
+@import './color.scss';
+@import './layout.scss';
+
+$typeSize: 24px;
+
+h1 {
+    font-size: 11.4vw;
+    letter-spacing:-5px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+    color: $textColor;
+    grid-column-start:$gridStart;
+    grid-column-end:$gridEnd;
+    margin: 0; 
+    @media only screen and (max-width: 450px) {
+        letter-spacing:0;
+        font-size: 9vw;
+    }
+
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size:6vw;
+    margin: 0;
+    color: $textColor;
+    @media only screen and (max-width: 450px) {
+        margin-top: 40px;
+    }
+}
+
+p, a {
+font-family: sans-serif;
+text-transform: uppercase;
+font-weight:normal;
+text-decoration: none;
+color:$textColor;
+letter-spacing: 2px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color:$hoverColor;
+}
+
+.intro {
+    margin: 0;
+}
+
+.campaign-title {
+    font-weight: bold;
+}
