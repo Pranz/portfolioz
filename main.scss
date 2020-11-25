@@ -29,15 +29,19 @@ body {
     margin: 0;
     grid-column-start:$gridStart;
     grid-column-end:$gridEnd;
-    height:100vh;
+    min-height:100vh;
     margin-bottom: 100px;
     @media only screen and (max-width: 800px) {
        display: flex;
        flex-direction: column;
-        grid-template-columns:0;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        height: 100%;
-    
+       height: 100%;
+    }
+}
+
+#web {
+    grid-template-rows: 1fr max-content;
+    .video-container {
+        height: 40vw;
     }
 }
 
